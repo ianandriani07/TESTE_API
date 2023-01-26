@@ -16,9 +16,10 @@ class AvaliacaoSerializer(serializers.ModelSerializer):
             'nome',
             'email',
             'feedback',
-            'ativo',
-            'nota'
+            'nota',
+            'ativo'
         )
+
 
 class MateriaSerializer(serializers.ModelSerializer):
 
@@ -27,5 +28,6 @@ class MateriaSerializer(serializers.ModelSerializer):
         fields = (
             'id',
             'materia',
+            'url',
             'ativo'
          )
